@@ -1,29 +1,101 @@
-# VideoWeb-
+# VideoWeb
 
-# This is my 3rd Year University project in my DataBase course.
+VideoWeb is a database-driven video-streaming web application developed as a third-year university database course project.
 
-As there are so many popular video streaming website like Amazon prime  video, Netflix, Hulu, ShowTime etc. We are expecting to build a website  that will have all the features just like all of the streaming sites.  This website will have various kinds of features for the Website  owner and for Users also.
+The application was built with core PHP, MySQL, JavaScript, AJAX, HTML, and CSS. It demonstrates server-side development, relational database design, user authentication, content management, search functionality, and frontend–backend integration.
 
-# Features for Owner: 
-1. Adding entities like adding movies, series, videos etc. 
-2. Storing information of all the user. 
-3. Adding subscription option for users. 
-4. Updating entities and also deleting entities if needs. 
-5. Storing videos in various kinds of genre and categories.
-6. 
-# Features for Users: 
-8. User can sign up and logged in this website and their information will be stored and they 
-can update their information also like their name, email address, password etc. if need. 
-2. They can subscribes this website to continue their watching. 
-3. Users can be able to see some kinds of previews of videos or trailer before starting 
-certain videos, they can be able to mute the sound of those preview videos also. 
-4. They can be able to see if they saw any kinds of videos earlier or not. 
-5. They will be able to actually watch TV shows, movies etc. There will be some basic 
-controls also like pausing video, mute video, maximizing the screen etc. 
-6. Users will have a feature like for all kinds of videos come back to start playing where 
-they left. 
-7. Users can be able to search any kinds of TV shows, movies, videos etc. And all the 
-matching shows and videos will be presented in the screen as a result. 
-8. USer can delet their acount too.
+## Key Features
 
-We used PHP, MySQL [our database will be a relational database], HTML, JavaScript and CSS for this project.
+### User Features
+
+* User registration, login, and logout
+* User profile management
+* Browse movies, television series, and videos
+* View content organised by categories and genres
+* Search for available movies, series, and videos
+* Access content details and video-playback pages
+* Update account information
+* Delete a user account
+
+### Content-Management Features
+
+* Add movies, series, videos, and categories
+* Update existing content information
+* Delete content from the catalogue
+* Store and manage user and content data
+* Organise videos by genre and category
+
+## Technology Stack
+
+* **Backend:** PHP
+* **Database:** MySQL
+* **Frontend:** HTML, CSS, JavaScript
+* **Asynchronous Requests:** AJAX
+
+## Project Structure
+
+```text
+VideoWeb/
+├── ajax/              # AJAX request handlers
+├── assets/            # CSS, JavaScript, images, and frontend resources
+├── entities/          # Content-related components
+├── includes/          # Reusable PHP components and configuration
+├── Category.php       # Category-related functionality
+├── entity.php         # Content-entity functionality
+├── index.php          # Application landing page
+├── login.php          # User authentication
+├── logout.php         # User logout
+├── register.php       # User registration
+├── profile.php        # User-profile management
+├── search.php         # Content search
+├── movies.php         # Movie catalogue
+├── shows.php          # Television-series catalogue
+├── watch.php          # Video-playback page
+├── categories.sql     # Category database schema and data
+├── entities.sql       # Content-entity schema and data
+└── videos.sql         # Video schema and data
+```
+
+## Running the Project Locally
+
+### Prerequisites
+
+Install a local PHP and MySQL environment such as:
+* XAMPP
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/AnisulMahmud/VideoWeb.git
+```
+2. Move the project folder into your local server directory, such as `htdocs` when using XAMPP.
+3. Start Apache and MySQL.
+4. Create a new MySQL database.
+5. Import the provided SQL files:
+```text
+categories.sql
+entities.sql
+videos.sql
+```
+6. Update the project’s database connection settings with your local database name, username, password, and host.
+7. Open the application in your browser:
+```text
+http://localhost/VideoWeb
+```
+
+## Skills Demonstrated
+
+This project provided practical experience with:
+
+* Server-side application development using PHP
+* Relational database design with MySQL
+* User authentication and session management
+* SQL queries and CRUD operations
+* Form handling and input processing
+* Search and content-filtering functionality
+* AJAX-based frontend–backend communication
+* Structuring and maintaining a multi-page web application
+
+## Project Context
+VideoWeb was created as an academic project to apply database and web-development concepts in a complete application. It is maintained as a portfolio project and is not intended for production use.
